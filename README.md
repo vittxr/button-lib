@@ -1,4 +1,34 @@
-learning how create npm library
+# Summary 
+
+Learning how to create a component lib
+
+npm-link: https://www.npmjs.com/package/@vittxr/button-lib
+
+# Usage
+
+1. Run `yarn add @vittxr/button-lib` or `npm i @vittxr/button-lib`
+2. Sample code:
+```tsx
+import './App.css'
+import { Button } from '@vittxr/button-lib'
+
+function App() {
+  return (
+    <>
+      <Button variant='filled'>
+        testing @vittxr/button-lib button
+      </Button>
+    </>
+  )
+}
+
+export default App
+
+```
+
+# Publish 
+
+`npm publish --access public`
 
 # References: 
 
