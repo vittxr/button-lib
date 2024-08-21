@@ -1,8 +1,21 @@
 {
   "version": "1.0.0-beta",
   "license": "MIT",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "name": "@vittxr/button-lib",
+  "author": "Vitor Schirmer",
+  "main": "./dist/index.js",
+  "module": "./dist/button-lib.esm.js",
+  "size-limit": [
+    {
+      "path": "./dist/button-lib.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "./dist/button-lib.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "typings": "./dist/index.d.ts",
   "files": [
     "dist",
     "src"
@@ -35,19 +48,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@vittxr/button-lib",
-  "author": "Vitor Schirmer",
-  "module": "dist/@vittxr/button-lib.esm.js",
-  "size-limit": [
-    {
-      "path": "dist/@vittxr/button-lib.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/@vittxr/button-lib.esm.js",
-      "limit": "10 KB"
-    }
-  ],
   "devDependencies": {
     "@chromatic-com/storybook": "^1.7.0",
     "@size-limit/preset-small-lib": "^11.1.4",
